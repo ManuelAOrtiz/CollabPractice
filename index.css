@@ -26,6 +26,7 @@
 .header-wrapper {
 		background-image: url("images/animalBackground.jpg");
 		background-color: black;
+		background-size: 50% 100%;
 		width: 100%;
 		height: 300px;
 }
@@ -124,5 +125,29 @@ footer h6 span {
 }
 
 @media all and (min-width: 481px) and (max-width: 768px){
+	header h1 {
+		font-size: 2em;
+	}
+	header h1 span {
+		padding-left: 40px;
+	}
+	header h3 {
+		padding-left: 75px;
+	}
+}
 
+@media all and (max-width: 480px) {
+	.header-wrapper {
+		background-size: 100% 100%;
+		height: 200px;
+}
+	header h1 {
+		font-size: 1.5em;
+	}
+	header h1 span {
+		padding-left: 20px;
+	}
+	header h3 {
+		padding-left: 40px;
+	}	
 }
