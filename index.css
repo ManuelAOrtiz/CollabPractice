@@ -62,8 +62,10 @@ header h3 {
 
 .mission-statement {
 	width: 85%;
-	columns: 3;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
 	column-gap: 20px;
+	border: 1px solid red;
 	margin: 0 auto;
 }
 
@@ -76,7 +78,6 @@ header h3 {
 }
 
 .square-wrapper img {
-	height: 20%;
 	width: 20%;
 	padding: 5px;
 }
@@ -134,20 +135,57 @@ footer h6 span {
 	header h3 {
 		padding-left: 75px;
 	}
+	.mission-statement {
+		grid-template-columns: 1fr 1fr;
+		border: 1px solid green;
+	}
+
+	.square-wrapper {
+		padding: 5px;
+		margin-bottom: 30px;
+	}
+
+	.square-wrapper img {
+		padding: 5px;
+	}
+	.square-wrapper:nth-child(3) {
+		grid-column: 1/3;
+		border-radius: 15%;
+	}
 }
 
 @media all and (max-width: 480px) {
+	
 	.header-wrapper {
 		background-size: 100% 100%;
 		height: 200px;
-}
+	}
+	
 	header h1 {
 		font-size: 1.5em;
 	}
+	
 	header h1 span {
 		padding-left: 20px;
 	}
+	
 	header h3 {
 		padding-left: 40px;
-	}	
+	}
+	
+	.mission-statement {
+	width: 95%;
+	grid-template-columns: 1fr 1fr;
+	border: 1px solid pink;
+	}
+	
+	.square-wrapper {
+		padding: 3px;
+		margin-bottom: 10px;
+		grid-column: 1/3;
+	}
+
+	.square-wrapper img {
+		padding: 3px;
+	}
 }
