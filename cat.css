@@ -1,11 +1,13 @@
 *{
 	margin:0;
-	background-image: url("images/catBg.jpg");
+	/*background-image: url("images/catBg.jpg");*/
 }
-
+body{
+		background-image: url("images/catBg.jpg");
+}
 .wrapper{
 	display: grid;
-	grid-template-rows: 1fr 50fr 1fr;
+	grid-template-rows: 1fr 20fr 1fr;
 	width: 95%;
 	margin: 0 auto;
 }
@@ -19,6 +21,7 @@
 	display: grid;
 	grid-template-rows: 1fr 1fr 1fr;
 	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 1%;
 }
 .cat{
 	display: grid;
@@ -44,4 +47,8 @@
 }
 .f{
 	background-image: url("images/catSix.gif");
+}
+.words{
+	font-weight: bold;
+	text-align: center;
 }
