@@ -81,7 +81,7 @@ body{
 	text-align:center;
 }
 .footer h4{
-	font-size: 2em;
+	font-size: 1.75em;
 }
 
 .bottom-nav ul{
@@ -123,6 +123,11 @@ body{
 	}
 	.bottom-nav li{
 		font-size: 2em;
+	}
+}
+@media only screen and (max-width: 341px){
+	.footer h4{
+		font-size: 1.6em;
 	}
 }
 @media only screen and (min-width: 769px){
@@ -186,7 +191,7 @@ body{
 	}
 	.words{
 		font-size: 1.2em;
-		text-shadow: 1px 1px blue;
+		text-shadow: 1px 1px orange;
 	}
 	.footer{
 		grid-template-rows: 1fr .8fr .2fr;
