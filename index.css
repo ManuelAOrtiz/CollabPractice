@@ -85,20 +85,10 @@ footer {
 	background-color: black;
 	color: yellow;
 	width: 100%;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
 }
 footer h4 {
-	grid-column-start: 2;
-	grid-column-end: 3;
 	text-align: center;
-	font-size: 1.65em;
-	padding: 10px;
-	border-bottom: .5px dashed yellow;
-}
-.bottom-nav {
-	grid-column-start: 2;
-	grid-column-end: 3;
+	font-size: 2.5em;
 }
 
 .bottom-nav ul {
@@ -106,23 +96,20 @@ footer h4 {
 	display: flex;
 	overflow: hidden;
 	justify-content: space-around;
-	padding: 20px 70px;
+	margin-top: 1%;
+	padding: 10px 70px;
 }
 
 .bottom-nav ul li a {
 	color: yellow;
 	text-decoration: none;
-	font-size: .8em;
+	font-size: 2em;
 }
 
 footer .copyright {
-	grid-column: 1 / 2;
-	grid-row: 3;
 	text-align: center;
 }
-footer h6 span {
-	display: block;
-}
+
 
 @media all and (min-width: 481px) and (max-width: 768px){
 	header h1 {
@@ -149,6 +136,16 @@ footer h6 span {
 	.square-wrapper:nth-child(3) {
 		grid-column: 1/3;
 		border-radius: 15%;
+	}
+	footer h4{
+		font-size: 2em;
+	}
+	.bottom-nav ul {
+			padding: 5px 35px;
+	}
+
+	.bottom-nav ul li a {
+		font-size: 1.5em;
 	}
 }
 
@@ -184,5 +181,15 @@ footer h6 span {
 
 	.square-wrapper img {
 		padding: 3px;
+	}
+	footer h4{
+		font-size: 1.5em;
+	}
+	.bottom-nav ul {
+		padding: 0px 0px 5px 0px;
+	}
+
+	.bottom-nav ul li a {
+		font-size: 1.25em;
 	}
 }
