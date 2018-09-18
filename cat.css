@@ -7,7 +7,7 @@ body{
 }
 .wrapper{
 	display: grid;
-	grid-template-rows: .5fr 35fr 1fr;
+	grid-template-rows: .3fr 14fr 1fr;
 	width: 95%;
 	margin: 0 auto;
 	background-image: url("images/catBg.jpg");
@@ -15,7 +15,6 @@ body{
 .navbar{
 	padding-top: 1%;
 	background-color: black;
-
 }
 .navbar ul{
 	display: grid;
@@ -28,11 +27,16 @@ body{
 	margin-bottom: 1%;
 }
 .navbar li{
-	font-size: 3em;
+	font-size: 2em;
 }
 .navbar li a{
 	text-decoration: none;
 	color: yellow;
+}
+.header-wrapper{
+	height: 0;
+	width: 0;
+	font-size: 0;
 }
 .catWrapper{
 	display: grid;
@@ -73,11 +77,11 @@ body{
 	color:yellow;
 	background-color: black;
 	display: grid;
-	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-rows: 1fr .5fr .3fr;
 	text-align:center;
 }
 .footer h4{
-	font-size: 3em;
+	font-size: 2em;
 }
 
 .bottom-nav ul{
@@ -92,7 +96,7 @@ body{
 }
 .bottom-nav li{
 	text-decoration: none;
-	font-size: 3em;
+	font-size: 1.5em;
 }
 .bottom-nav li a{
 	color:yellow;
@@ -109,7 +113,80 @@ body{
 	.catWrapper{
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows:  1fr 1fr 1fr;
+		grid-template-rows:  1fr 1fr 1.5fr;
+	}
+	.footer{
+		grid-template-rows: 1fr .8fr .2fr;
+	}
+	.footer h4{
+		font-size: 2.5em;
+	}
+	.bottom-nav li{
+		font-size: 2em;
+	}
+}
+@media only screen and (min-width: 769px){
+	.wrapper{
+		grid-template-rows: .8fr 4fr .3fr;
+	}
+	.header-wrapper {
+		background-image: url("images/animalBackground.jpg");
+		background-color: black;
+		background-size: 50% 100%;
+		width: 100%;
+		height: 350px;
+		font-size: 1em;
+		/*background-repeat:;*/
+	}
+	header {
+		/*display: flex;*/
+		/*border: 2px solid yellow;*/
+		width: 50%;
+		margin: 0px auto;
+		color: yellow;
+		position: relative;
+		top: 15%;
+		text-shadow: 2px 2px 8px black;
+		/*left: 30%;*/
+		/*vertical-align: middle;*/
+		overflow: hidden;
+	}
+	header h1 {
+		/*display: block;*/
+		font-size: 3.25em;
+		/*float: left;*/
+	}
+	header h1 span {
+		padding-left: 80px;
+	}
+	header h3 {
+		padding-left: 175px;
+	}
+
+	.navbar ul{
+		width:52.5%;
+		display: flex;
+		justify-content: space-between;
+		overflow:hidden;
+		margin-top: .2%;
+	}
+	.navbar li{
+		font-size: 1.3em;
+	}
+	.catWrapper{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows:  1fr 1fr 1.4fr;
+		grid-column-gap: 1%;
+		margin:1% 1%;
+	}
+	.cat{
+		margin-bottom: 2%;
+	  	grid-template-rows: 1.5fr .1fr;
+	}
+	.words{
+		font-size: 1.2em;
+		text-shadow: 1px 1px blue;
 	}
 	.footer{
 		grid-template-rows: 1fr .8fr .2fr;
