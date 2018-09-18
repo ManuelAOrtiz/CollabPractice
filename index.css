@@ -65,7 +65,6 @@ header h3 {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	column-gap: 20px;
-	border: 1px solid red;
 	margin: 0 auto;
 }
 
@@ -137,7 +136,6 @@ footer h6 span {
 	}
 	.mission-statement {
 		grid-template-columns: 1fr 1fr;
-		border: 1px solid green;
 	}
 
 	.square-wrapper {
@@ -176,7 +174,6 @@ footer h6 span {
 	.mission-statement {
 	width: 95%;
 	grid-template-columns: 1fr 1fr;
-	border: 1px solid pink;
 	}
 	
 	.square-wrapper {
