@@ -26,27 +26,21 @@
 .header-wrapper {
 		background-image: url("images/animalBackground.jpg");
 		background-color: black;
+		background-size: 50% 100%;
 		width: 100%;
 		height: 300px;
-		/*background-repeat:;*/
 }
 header {
-	/*display: flex;*/
-	/*border: 2px solid yellow;*/
 	width: 50%;
 	margin: 0px auto;
 	color: yellow;
 	position: relative;
 	top: 15%;
 	text-shadow: 2px 2px 8px black;
-	/*left: 30%;*/
-	/*vertical-align: middle;*/
 	overflow: hidden;
 }
 header h1 {
-	/*display: block;*/
 	font-size: 3.25em;
-	/*float: left;*/
 }
 header h1 span {
 	padding-left: 80px;
@@ -56,7 +50,6 @@ header h3 {
 }
 
 .main-content {
-	/*border: 2px solid green;*/
 	margin: 30px auto;
 	width: 60%;
 	position: relative;
@@ -66,20 +59,17 @@ header h3 {
 	font-size: .85em;
 	padding: 10px 0px;
 }
-.main-content h2 {
-	/*margin: 5px 0;*/
-}
+
 .mission-statement {
 	width: 85%;
-	/*border: 1px solid red;*/
-	columns: 3;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
 	column-gap: 20px;
 	margin: 0 auto;
 }
 
 .square-wrapper {
 	background-color: yellow;
-	/*border: 1px solid blue;	*/
 	padding: 10px;
 	text-align: center;
 	margin-bottom: 50px;
@@ -87,7 +77,6 @@ header h3 {
 }
 
 .square-wrapper img {
-	height: 20%;
 	width: 20%;
 	padding: 5px;
 }
@@ -122,21 +111,78 @@ footer h4 {
 
 .bottom-nav ul li a {
 	color: yellow;
-	/*margin: 0px auto;*/
 	text-decoration: none;
 	font-size: .8em;
 }
 
 footer .copyright {
-	/*display: flex;*/
 	grid-column: 1 / 2;
 	grid-row: 3;
-	/*justify-content: flex-end;*/
 	text-align: center;
-		/*border: 1px solid red;*/
 }
 footer h6 span {
-/*	border: 1px solid yellow;*/
 	display: block;
-	/*text-align: left;*/
+}
+
+@media all and (min-width: 481px) and (max-width: 768px){
+	header h1 {
+		font-size: 2em;
+	}
+	header h1 span {
+		padding-left: 40px;
+	}
+	header h3 {
+		padding-left: 75px;
+	}
+	.mission-statement {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.square-wrapper {
+		padding: 5px;
+		margin-bottom: 30px;
+	}
+
+	.square-wrapper img {
+		padding: 5px;
+	}
+	.square-wrapper:nth-child(3) {
+		grid-column: 1/3;
+		border-radius: 15%;
+	}
+}
+
+@media all and (max-width: 480px) {
+	
+	.header-wrapper {
+		background-size: 100% 100%;
+		height: 200px;
+	}
+	
+	header h1 {
+		font-size: 1.5em;
+	}
+	
+	header h1 span {
+		padding-left: 20px;
+	}
+	
+	header h3 {
+		padding-left: 40px;
+	}
+	
+	.mission-statement {
+	width: 95%;
+	grid-template-columns: 1fr 1fr;
+	}
+	
+	.square-wrapper {
+		padding: 3px;
+		margin-bottom: 10px;
+		grid-column: 1/3;
+	}
+
+	.square-wrapper img {
+		padding: 3px;
+	}
 }
